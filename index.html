@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Julio Cesar - Cloud Engineer | Cybersecurity</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('./images/wallpaper.jpg'); /* Substitua pelo caminho da sua imagem */
+      background-image: url('https://i.pinimg.com/originals/8b/60/ab/8b60aba6e1537c859e18570f9624290d.gif');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
       color: #f1f5f9;
       margin: 0;
       padding: 40px 20px;
@@ -24,8 +26,8 @@
 
     h2 {
       font-size: 26px;
-      margin: 20px 0;
-      color: #38bdf8;
+      margin: 40px 0 20px;
+      color: #f9fdff;
     }
 
     p {
@@ -35,15 +37,15 @@
       margin: 0 auto 40px;
     }
 
-    .projects-container {
+    .projects-container, .certifications-container {
       display: flex;
       justify-content: center;
-      gap: 30px;
       flex-wrap: wrap;
+      gap: 30px;
       margin-top: 30px;
     }
 
-    .project-card {
+    .project-card, .cert-card {
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 16px;
       padding: 20px;
@@ -52,50 +54,95 @@
       transition: transform 0.3s ease;
     }
 
-    .project-card:hover {
+    .project-card:hover, .cert-card:hover {
       transform: scale(1.05);
     }
 
-    .project-card img {
-      width: 100%;
-      height: 150px;
+    .project-card img, .cert-card img {
+      width: 96px;
+      height: 96px;
       object-fit: contain;
-      border-radius: 12px;
-      background-color: #0f172a;
-      padding: 10px;
       margin-bottom: 12px;
+      background-color: transparent;
     }
 
-    .project-title {
+    .project-title, .cert-title {
       font-size: 16px;
       font-family: monospace;
+    }
+
+    .profile-photo {
+      width: 160px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #000000;
     }
   </style>
 </head>
 <body>
+  <!-- Foto e título -->
   <img src="./images/eu.png" alt="Foto de Julio Cesar" class="profile-photo">
   <h1>Julio Cesar</h1>
   <h2>Cloud Engineer | Cybersecurity</h2>
 
+  <!-- Tecnologias -->
+  <p align="center">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=azure,aws,windows,linux,debian,grafana,zabbix,apache,nginx,notion,gmail,linkedin,vmwareworkstation,virtualbox,python,wireshark,word,excel,powerpoint,notepadpp,github" alt="Tech Stack Icons" />
+  </p>
+
+  <!-- Badges -->
+  <p align="center">
+    <img src="https://img.shields.io/badge/ChatGPT-74aa9c?logo=openai&logoColor=white" alt="ChatGPT" />
+    <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-web-services&logoColor=white" alt="AWS" />
+    <img src="https://custom-icon-badges.demolab.com/badge/Microsoft%20Azure-0089D6?logo=msazure&logoColor=white" alt="Azure" />
+  </p>
+
+  <!-- Descrição -->
   <p>
     Sou estudante de Redes de Computadores com foco em Computação em Nuvem.<br>
     Tenho experiência prática nas principais plataformas de cloud computing, incluindo Microsoft Azure e Amazon Web Services (AWS), atuando em projetos que envolvem infraestrutura, automação, segurança e escalabilidade de ambientes em nuvem.<br>
     Estou em constante aprimoramento técnico, buscando aplicar meus conhecimentos em soluções seguras, eficientes e alinhadas às necessidades do mercado.
   </p>
 
+  <!-- Projetos -->
   <h2>Projetos Principais</h2>
   <div class="projects-container">
     <div class="project-card">
-      <img src="./images/aws.png" alt="Projeto AWS">
+      <img src="https://go-skill-icons.vercel.app/api/icons?i=aws" alt="AWS">
       <div class="project-title">AWS Infraestrutura</div>
     </div>
     <div class="project-card">
-      <img src="./images/zabbix.png" alt="Projeto Zabbix">
+      <img src="https://go-skill-icons.vercel.app/api/icons?i=zabbix" alt="Zabbix">
       <div class="project-title">Monitoramento Zabbix</div>
     </div>
     <div class="project-card">
-      <img src="./images/azure.png" alt="Projeto Azure">
-      <div class="project-title">Azure Active Directory</div>
+      <img src="https://go-skill-icons.vercel.app/api/icons?i=azure" alt="Azure">
+      <div class="project-title">Azure Infraestrutura</div>
+    </div>
+  </div>
+
+  <!-- Certificações -->
+  <h2>Certificações</h2>
+  <div class="certifications-container">
+    <div class="cert-card">
+      <img src="./images/google-architect.png" alt="Google Architect">
+      <div class="cert-title">Google Cloud Professional Cloud Architect</div>
+    </div>
+    <div class="cert-card">
+      <img src="./images/google-engineer.png" alt="Google Engineer">
+      <div class="cert-title">Google Cloud Associate Cloud Engineer</div>
+    </div>
+    <div class="cert-card">
+      <img src="./images/aws-foundation.png" alt="AWS Practitioner">
+      <div class="cert-title">AWS Cloud Practitioner</div>
+    </div>
+    <div class="cert-card">
+      <img src="./images/aws-academy.png" alt="AWS Academy">
+      <div class="cert-title">AWS Academy Cloud Foundations</div>
+    </div>
+    <div class="cert-card">
+      <img src="./images/gitops.png" alt="GitOps">
+      <div class="cert-title">GitOps Certified Fundamentals</div>
     </div>
   </div>
 </body>
